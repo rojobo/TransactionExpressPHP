@@ -454,19 +454,19 @@
             $username = $POST["username"];
             $password = $POST["password"];
             $to = $email;
-            $subject = "Your HealthTrust Software Account Information";
+            $subject = "Your  Software Account Information";
 
             $message = "<html><head><title>Message</title></head><body>";
             $message .= "Welcome " . $name . "!<br />";
-            $message .= "Your account has been created. <br /> To use the system, go to <br /> <br /><a href='http://www.healthtrustglobal.com'>HealthTrustGlobal.com</a> <br /> <br /> Username:" . $username . " <br />Password:" . $password . " <br /> <br /> For support or help, contact us via email at <a href='mailto:support@healthtrustsoftware.com' target='_top'>support@healthtrustsoftware.com</a>. <br /> <br /> Enjoy!";
+            $message .= "Your account has been created. <br /> To use the system, go to <br /> <br /><a href='http://www..com'>.com</a> <br /> <br /> Username:" . $username . " <br />Password:" . $password . " <br /> <br /> For support or help, contact us via email at <a href='mailto:support@.com' target='_top'>support@.com</a>. <br /> <br /> Enjoy!";
             $message .= "</body></html>";
 
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=utf-8\r\n";
-            $headers .= "From: support@healthtrustsoftware.com\r\n";
-            $headers .= "Reply-To: support@healthtrustsoftware.com\r\n";
+            $headers .= "From: support@.com\r\n";
+            $headers .= "Reply-To: support@.com\r\n";
             ini_set('SMTP','10.0.0.6');
-            ini_set('sendmail_from','support@healthtrustsoftware.com');
+            ini_set('sendmail_from','support@.com');
             if(mail($to, $subject, $message, $headers)) {
                 return array("response"=>"success");
             }
@@ -482,19 +482,19 @@
             $username = $POST["username"];
             $password = $POST["password"];
             $to = $email;
-            $subject = "Your HealthTrust Software Account Information";
+            $subject = "Your  Software Account Information";
 
             $message = "<html><head><title>Message</title></head><body>";
             $message .= "Welcome " . $name . "!<br />";
-            $message .= "Your account has been created. <br /> To use the system go to <br /> <br /><a href='http://www.healthtrustglobal.com'>HealthTrustGlobal.com</a> <br /> <br /> Username:" . $username . " <br />Password:" . $password . " <br /> <br /> For support or help send e-mail to <a href='mailto:support@healthtrustsoftware.com' target='_top'>support@healthtrustsoftware.com</a>. <br /> <br /> Enjoy!";
+            $message .= "Your account has been created. <br /> To use the system go to <br /> <br /><a href='http://www..com'>.com</a> <br /> <br /> Username:" . $username . " <br />Password:" . $password . " <br /> <br /> For support or help send e-mail to <a href='mailto:support@.com' target='_top'>support@.com</a>. <br /> <br /> Enjoy!";
             $message .= "</body></html>";
 
             $headers = "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=utf-8\r\n";
-            $headers .= "From: support@healthtrustsoftware.com\r\n";
-            $headers .= "Reply-To: support@healthtrustsoftware.com\r\n";
+            $headers .= "From: support@.com\r\n";
+            $headers .= "Reply-To: support@.com\r\n";
             ini_set('SMTP','10.0.0.6');
-            ini_set('sendmail_from','support@healthtrustsoftware.com');
+            ini_set('sendmail_from','support@.com');
             if(mail($to, $subject, $message, $headers)) {
                 return array("response"=>"success");
             }
